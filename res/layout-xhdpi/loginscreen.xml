@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg">
+    
+    <ScrollView 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    
+    <ImageView
+        android:id="@+id/imgviewstylez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/stylelogo" />
+    
+    
+    <TextView 
+        android:layout_below="@+id/imgviewstylez"
+        android:id="@+id/txtviewsignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:layout_marginTop="10dp"
+        android:text="Sign in with"
+        android:textSize="18dp"
+        android:textColor="#ffffff"/>
+    
+    <LinearLayout
+        android:id="@+id/ll_fbimg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/txtviewsignin"
+        android:layout_margin="15dp">
+        
+        <ImageView 
+        android:id="@+id/imgviewfacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/facebook"/>
+        
+       <!--  <ImageView 
+        android:id="@+id/imgviewtwitter"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/twitter"/> -->
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll_fbimg"
+        android:layout_margin="10dp">
+        
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextbg"
+            android:hint="Email"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="18dp" 
+            android:padding="10dp"
+            android:textStyle="normal"
+            android:id="@+id/edttextemail"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/edttextpwd"
+            />
+        
+            <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:background="@drawable/edittextbg"
+            android:hint="Password"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="18dp" 
+            android:password="true"
+            android:padding="10dp"
+  			 android:textStyle="normal"
+            android:id="@+id/edttextpwd"
+            android:singleLine="true"/>
+            
+            <LinearLayout
+        android:id="@+id/ll_checkbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+       >
+                <CheckBox
+                    android:id="@+id/chkboxremember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                   />
+            
+            <TextView 
+        android:layout_below="@+id/imgviewstylez"
+        android:id="@+id/txtviewremember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="5dp"
+        android:text="Remember Me"
+        android:textSize="14dp"
+        android:textColor="#ffffff"/>
+           </LinearLayout>
+           
+            <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       android:gravity="center"
+        android:layout_margin="15dp">
+            
+                 <ImageView 
+        android:id="@+id/imgviewloginoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginoff"/>
+                 
+                 <ImageView 
+        android:id="@+id/imgviewloginon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginon"
+        android:visibility="gone"/>
+                 
+                  <ImageView 
+        android:id="@+id/imgviewsignupoff"
+         android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signupoff"/>
+                
+                  
+                  <ImageView 
+        android:id="@+id/imgviewsignupon"
+         android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signupon"
+        android:visibility="gone"/>
+        </LinearLayout>
+        </LinearLayout>
+        
+    <TextView 
+        android:layout_below="@+id/ll_email"
+        android:id="@+id/txtviewforgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+        android:text="Forgot your details?"
+        android:textSize="18dp"
+        android:textColor="#ffffff"/>
+
+    
+    </RelativeLayout>
+    
+            </ScrollView>
+    
+</RelativeLayout>

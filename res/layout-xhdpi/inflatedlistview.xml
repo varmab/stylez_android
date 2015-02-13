@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imgviewsaloonprofile"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/noimg1"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@+id/imgviewsaloonprofile" >
+
+        <TextView
+            android:id="@+id/txtviewname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="5dp"
+          
+            android:textSize="19dp"
+           />
+
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtviewname"
+           android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/locationicon"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/txtviewaddressandcity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+             
+               />
+
+        <!-- <TextView
+            android:id="@+id/txtviewcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="anakapalle"
+            android:layout_marginLeft="5dp"
+            -->
+          
+           />
+        
+         </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgviewsaloonprofile"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/txtviewdistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_toLeftOf="@+id/imageView1"
+      
+       />
+
+</RelativeLayout>

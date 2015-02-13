@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/bg" >
+    
+      <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+         	android:background="@drawable/back"
+            android:id="@+id/imgviewback"
+            android:layout_marginLeft="7dp"/>
+    
+        <ScrollView 
+            android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imgviewback">
+    
+            <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center">
+            
+      <ImageView 
+        android:id="@+id/imgviewsignupoff"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_name"
+        android:layout_centerInParent="true"
+        android:background="@drawable/signupoff1"/>
+     
+      
+      <ImageView 
+        android:id="@+id/imgviewsignupon"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_name"
+        android:layout_centerInParent="true"
+        android:background="@drawable/signupon1"
+        android:visibility="gone"/>
+
+      <LinearLayout
+          android:id="@+id/ll_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/imgviewphoto"
+          android:layout_centerHorizontal="true"
+         
+          android:layout_marginTop="20dp"
+          
+          android:orientation="vertical" >
+
+          <EditText
+              android:id="@+id/edttextname"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/edittextbg"
+              android:hint="Full Name"
+              android:nextFocusDown="@+id/edttextpwd"
+              android:padding="10dp"
+              android:singleLine="true"
+            
+              android:textColor="#ffffff"
+              android:textColorHint="#ffffff"
+              android:textSize="20dp"
+              android:textStyle="normal" >
+
+              <requestFocus />
+          </EditText>
+
+          <EditText
+              android:id="@+id/edttextemail"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+              android:background="@drawable/edittextbg"
+              android:hint="Email"
+              android:padding="10dp"
+              android:singleLine="true"
+              android:textColor="#ffffff"
+              android:textColorHint="#ffffff"
+              android:textSize="20dp"
+              android:textStyle="normal" 
+              />
+
+          <EditText
+              android:id="@+id/edttextpassword"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+              android:background="@drawable/edittextbg"
+              android:hint="Password"
+              android:padding="10dp"
+              android:password="true"
+              android:singleLine="true"
+              android:textColor="#ffffff"
+              android:textColorHint="#ffffff"
+              android:textSize="20dp"
+              android:textStyle="normal" 
+           />
+      </LinearLayout>
+
+      <ImageView
+          android:id="@+id/imgviewphoto"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/imgviewstylez"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="25dp"
+          android:background="@drawable/photo"
+          android:scaleType="fitXY" />
+
+      <ImageView
+          android:id="@+id/imgviewstylez"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:background="@drawable/stylelogo" />
+      
+      </RelativeLayout>
+      
+             </ScrollView>
+      
+</RelativeLayout>

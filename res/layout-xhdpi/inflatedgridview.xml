@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    
+	<RelativeLayout 
+                android:id="@+id/rel_images"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+      	    
+            <ImageView 
+              android:id="@+id/imgviewstyles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/noimage"
+            android:scaleType="fitXY"/>
+          
+            <RelativeLayout
+                android:id="@+id/rel_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/imgviewstyles"
+                android:layout_alignBottom="@+id/imgviewstyles"
+                android:background="@drawable/transparentfortext" >
+
+                <TextView
+                    android:id="@+id/txtviewname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="17dp"
+                    android:textColor="#ffffff" />
+
+                <ImageView
+                    android:id="@+id/imgviewheartoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/heartoff" />
+
+                <ImageView
+                    android:id="@+id/imgviewhearton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/hearton"
+                    android:visibility="gone" />
+            </RelativeLayout>
+            
+            </RelativeLayout>
+            
+	
+	<RelativeLayout android:id="@+id/transback"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:background="@drawable/transprant"
+	    />
+    
+    
+</RelativeLayout>

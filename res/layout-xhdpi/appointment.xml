@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <RelativeLayout 
+      android:id="@+id/rel_navbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navbar"
+        android:layout_alignParentTop="true" >
+        
+        <ImageView 
+            android:id="@+id/imgviewstylez"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo_small"
+            android:layout_centerInParent="true"/>
+        
+        <ImageView 
+            android:id="@+id/imgviewback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_centerInParent="true"/>
+        
+    </RelativeLayout>
+    
+    
+      
+      <LinearLayout
+          android:id="@+id/ll_edittext"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+          
+          
+          android:orientation="vertical" >
+
+          <EditText
+              android:id="@+id/edttextmail"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:background="@drawable/edittextbg"
+              android:padding="10dp"
+              android:singleLine="true"
+              android:textColor="#ffffff"
+              android:textSize="19dp"
+              android:textStyle="normal"
+				>
+              <requestFocus />
+          </EditText>
+
+          <EditText
+              android:id="@+id/edttextphonenumber"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/edittextbg"
+             
+              android:padding="10dp"
+              android:singleLine="true"
+              android:textColor="#ffffff"
+              android:textSize="19dp"
+             />
+
+          <EditText
+              android:id="@+id/edttextdate"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/edittextbg"
+              android:hint="Select Date"
+              android:padding="10dp"
+              android:singleLine="true"
+              android:textColor="#ffffff"
+              android:textSize="19dp"
+              android:textStyle="normal" 
+             />
+
+          <EditText
+              android:id="@+id/edttexttime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/edittextbg"
+              android:hint="Select Time"
+              android:padding="10dp"
+              android:singleLine="true"
+              android:textColor="#ffffff"
+              android:textSize="19dp"
+              android:textStyle="normal"
+              
+              />
+      </LinearLayout>
+
+       <LinearLayout
+          android:id="@+id/ll_editdt"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+          android:layout_below="@+id/ll_edittext"
+          android:gravity="center_horizontal"
+          android:orientation="horizontal" >
+          
+           <ImageView 
+            android:id="@+id/imgviewdone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/done_btn"
+            android:layout_below="@+id/ll_edittext"
+           
+            android:layout_centerInParent="true"/>
+           
+           <ImageView 
+            android:id="@+id/imgviewdone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/done_btn"
+            android:layout_below="@+id/ll_edittext"
+            android:layout_marginLeft="20dp"
+            android:layout_centerInParent="true"/>
+           
+           </LinearLayout>
+      
+</RelativeLayout>

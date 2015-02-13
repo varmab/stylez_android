@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/blackbg">
+
+    <RelativeLayout 
+        android:id="@+id/rel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_navbar">
+        
+        <RelativeLayout
+            android:id="@+id/rel_mentransparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/men" >
+            
+            <ImageView
+                android:id="@+id/imgviewmen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparentforbigimages">
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/rel_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/imgviewmen"
+                android:layout_alignBottom="@+id/imgviewmen"
+                android:background="@drawable/transparentfortext" >
+
+                <TextView
+                    android:id="@+id/txtviewmen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="Men"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/imgviewarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/arrow" />
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+          <RelativeLayout 
+            android:id="@+id/rel_womentransparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rel_mentransparent"
+            android:background="@drawable/women">
+
+               <ImageView
+                   android:id="@+id/imgviewwomen"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/transparentforbigimages" />
+              
+            <RelativeLayout
+                android:id="@+id/rel_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgviewwomen"
+                android:background="@drawable/transparentfortext" >
+
+                <TextView
+                    android:id="@+id/txtviewwomen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="Women"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/imgviewarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/arrow" />
+            </RelativeLayout>
+
+           
+        </RelativeLayout>
+        
+  </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rel_navbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/navbar" >
+        
+        <ImageView 
+            android:id="@+id/imgviewstylez"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo_small"
+            android:layout_centerInParent="true"/>
+        
+    </RelativeLayout>
+    
+     <RelativeLayout 
+        android:id="@+id/rel_small"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel"
+        >
+    
+     <RelativeLayout 
+         	
+            android:id="@+id/rel_profiletransparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile">
+
+         <ImageView
+                android:id="@+id/imgviewprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparentforsmallimages" />
+         
+            <RelativeLayout
+                android:id="@+id/rel_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgviewprofile"
+                android:layout_alignRight="@+id/imgviewprofile"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/transparentfortext" >
+
+                <TextView
+                    android:id="@+id/txtviewprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="Profile"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/imgviewarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/profileoff" />
+            </RelativeLayout>
+
+            
+            
+        </RelativeLayout>
+        
+     
+     <RelativeLayout 
+         	
+            android:id="@+id/rel_favouritestransparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rel_profiletransparent"
+            android:background="@drawable/favourites">
+            
+            <ImageView
+                android:id="@+id/imgviewfavourites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparentforsmallimages">
+                
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/rel_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgviewfavourites"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/transparentfortext" >
+
+                <TextView
+                    android:id="@+id/txtviewfavourites"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="Favorites"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/imgviewarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/heartoff" />
+            </RelativeLayout>
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+     
+      <RelativeLayout 
+        android:id="@+id/rel_small1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      android:layout_below="@+id/rel_small">
+    
+     <RelativeLayout 
+         	
+            android:id="@+id/rel_celebritiestransparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/salons">
+            
+            <ImageView
+                android:id="@+id/imgviewcelebrities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparentforsmallimages">
+                
+            </ImageView>
+            
+            <RelativeLayout 
+                android:id="@+id/rel_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/imgviewcelebrities"
+                android:background="@drawable/transparentfortext">
+                
+                <TextView 
+                    android:id="@+id/txtviewcelebrities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salons"
+                     android:textSize="20dp"
+                    android:layout_marginLeft="5dp"
+                     android:textColor="#ffffff"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"/>
+                
+                 <ImageView 
+                    android:id="@+id/imgviewarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/star_off"/>
+                
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+     
+     <RelativeLayout 
+         	
+            android:id="@+id/rel_updostransparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rel_celebritiestransparent"
+            android:background="@drawable/updos">
+            
+            <ImageView
+                android:id="@+id/imgviewupdos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparentforsmallimages"/>
+                
+            
+            
+            <RelativeLayout 
+                android:id="@+id/rel_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/transparentfortext">
+                
+                <TextView 
+                    android:id="@+id/txtviewupdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Updos"
+                    android:layout_marginLeft="5dp"
+                     android:textSize="20dp"
+                     android:textColor="#ffffff"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"/>
+                
+                 <ImageView 
+                    android:id="@+id/imgviewarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/updooff"/>
+                
+            </RelativeLayout>
+            
+        </RelativeLayout>
+    </RelativeLayout>
+    
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:visibility="gone"
+     	android:id="@+id/mainrel">
+		
+     <FrameLayout 
+       
+           android:id="@+id/container"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           
+           > 
+
+     </FrameLayout> 
+    
+    
+    </RelativeLayout> 
+</RelativeLayout>

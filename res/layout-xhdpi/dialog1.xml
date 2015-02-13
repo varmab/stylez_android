@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corners"
+    >
+        <LinearLayout android:id="@+id/textlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+    
+        <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/text"
+        android:textSize="18dp"
+       android:textColor="#4a5158"
+       android:text="Stylez"
+       android:textStyle="normal"
+        />
+        
+    </LinearLayout>
+    
+    
+    
+    
+    <!--for table layout  -->
+    <RelativeLayout 
+        android:id="@+id/line"
+    android:layout_height="2dp"   
+    android:layout_width="fill_parent"
+    android:layout_below="@+id/textlayout"
+    android:background="#c5c5c5"></RelativeLayout>
+    
+    <LinearLayout 
+    android:layout_below="@+id/line"
+    android:padding="0dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+  
+    >
+    
+    
+    <LinearLayout 
+        android:layout_marginTop="0dp"
+        android:layout_height="60dp"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        
+        
+        
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:id="@+id/todo" 
+            android:layout_weight="0.5"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:id="@+id/txtviewmessage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:textColor="#4a5158"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:text="Your stylist will contact you to confirm.They have the recipe so you'll get the look you want!"
+                
+                />
+             
+       </LinearLayout>
+     
+    
+  
+    </LinearLayout>
+
+<RelativeLayout 
+    android:layout_height="1dp"   
+    android:layout_width="fill_parent"
+    android:background="#c5c5c5"></RelativeLayout>
+
+<LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+    <LinearLayout 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/both"
+        android:layout_weight="0.5"
+        android:padding="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="45dp"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+
+        <TextView 
+			android:id="@+id/txtviewok"           
+            android:gravity="center"
+            android:textColor="#4a5158"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:text="ok"
+          android:textStyle="normal"
+            android:textSize="18dp"
+          />
+    </LinearLayout>
+    
+    
+</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

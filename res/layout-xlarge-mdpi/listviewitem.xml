@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgforzip">
+
+    
+   <RelativeLayout 
+      android:id="@+id/rel_navbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navbar"
+        android:layout_alignParentTop="true" >
+        
+        <ImageView 
+            android:id="@+id/imgviewstylez"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo_small"
+            android:layout_centerInParent="true"/>
+        
+        <ImageView 
+            android:id="@+id/imgviewback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_centerInParent="true"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/rel_listviewitem"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rel_navbar"
+        android:visibility="visible">
+    
+    
+    
+     <RelativeLayout 
+         android:id="@+id/rel_1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    	android:layout_above="@+id/horizontalListview">
+    	
+          <ImageView
+              android:id="@+id/imgviewsaloonpic"
+              android:layout_width="65dp"
+              android:layout_height="65dp"
+              android:layout_marginTop="10dp"
+              android:layout_centerHorizontal="true"
+             android:scaleType="fitXY"
+              android:background="@drawable/noimg1" />
+          
+          <TextView 
+              android:id="@+id/txtviewsalooname"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:gravity="center"
+              android:text="Sandor"
+              android:layout_marginTop="5dp"
+              android:textSize="30dp"
+              android:textColor="#ffffff"
+              android:layout_below="@+id/imgviewsaloonpic"/>
+          
+          <LinearLayout 
+        android:id="@+id/ll_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtviewsalooname"
+        android:orientation="vertical"
+     	android:layout_centerInParent="true"
+       android:layout_margin="5dp">
+          
+          <LinearLayout 
+        android:id="@+id/ll_address1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+       
+        <ImageView
+         android:id="@+id/imgviewlocation"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/navgations" ></ImageView>
+        
+     <TextView
+                android:id="@+id/txtviewaddressandcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            	android:textSize="15dp"
+            	android:textColor="#ffffff"
+            	android:layout_marginRight="3dp"
+            	 />
+     
+     <TextView
+                android:id="@+id/txtviewdistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textStyle="italic"
+                 android:textSize="15dp"
+                />
+    
+    </LinearLayout>
+
+          <LinearLayout 
+        android:id="@+id/ll_address2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+       
+        <TextView
+              android:id="@+id/txtviewstylecut1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:textSize="11dp" 
+             android:text="Request"
+             android:textColor="#ffffff"
+            />
+           
+              
+        <TextView
+              android:id="@+id/txtviewstylecut"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:textSize="11dp" 
+              android:layout_marginLeft="4dp"
+              android:textColor="#ffffff"
+            />
+     
+    <TextView
+              android:id="@+id/txtviewstylecut2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:textSize="11dp" 
+              android:layout_marginLeft="4dp"
+            android:text="from HairConstruction.us"
+            android:textColor="#ffffff"
+            />
+        
+    </LinearLayout>
+          
+          
+          
+          </LinearLayout>
+            
+    <RelativeLayout 
+      android:id="@+id/rel_emailsaloon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+            android:background="@drawable/mailbtn"
+             android:layout_below="@+id/ll_address" 
+             android:layout_margin="10dp">
+          
+        <TextView
+        android:id="@+id/txtviewemailthissaloon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+   		android:layout_centerInParent="true"
+        android:text="Make an appointment"
+       	android:textColor="#ffffff"
+        android:textSize="16dp" />
+        
+        
+          <ImageView
+             android:id="@+id/imgviewemailsaloon"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+          android:layout_toRightOf="@+id/txtviewemailthissaloon"
+           android:layout_centerInParent="true"
+           android:background="@drawable/arrow"/>
+    
+          </RelativeLayout>
+          
+    
+     <RelativeLayout 
+      android:id="@+id/rel_callandbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+            android:background="@drawable/appoimtntment"
+            android:layout_below="@+id/rel_emailsaloon"
+           android:visibility="gone"
+        
+            >
+          
+        <TextView
+        android:id="@+id/txtviewemailthissaloon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+   		android:layout_centerInParent="true"
+      android:text="Call &amp; Book an Appointment"
+       	android:textColor="#ffffff"
+        android:textSize="16dp" />
+        
+        
+          <ImageView
+             android:id="@+id/imgviewemailsaloon"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+          android:layout_toRightOf="@+id/txtviewemailthissaloon"
+           android:layout_centerInParent="true"
+           android:background="@drawable/arrow"/>
+    
+          </RelativeLayout>
+
+     <RelativeLayout
+         android:id="@+id/rel_text"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+         android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+         android:background="@drawable/tran_big" >
+
+         <TextView
+             android:id="@+id/txtviewwomen"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerInParent="true"
+             android:layout_marginLeft="5dp"
+             android:text="Pictures"
+             android:textColor="#ffffff" />
+     </RelativeLayout>
+    
+     
+			
+    </RelativeLayout>
+    
+      <com.stylez.thirdpartyTool.HorizontalListView
+                  android:id="@+id/horizontalListview"
+			      android:layout_width="fill_parent"
+			      android:layout_height="150dp"
+			      
+			     android:layout_above="@+id/ll_tab"
+			       />
+    
+     <LinearLayout
+         android:id="@+id/ll_tab"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:background="@drawable/footer_bg"
+         android:orientation="horizontal"
+         android:weightSum="1" >
+
+         <ImageView
+             android:id="@+id/imgviewhomeoff"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="0.25"
+             android:src="@drawable/home_off" />
+
+         <ImageView
+             android:id="@+id/imgviewhomeon"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="0.25"
+             android:src="@drawable/home_on"
+             android:visibility="gone" />
+
+         <ImageView
+             android:id="@+id/imgviewhearttaboff"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="0.25"
+             android:src="@drawable/heart_tab_off" />
+
+         <ImageView
+             android:id="@+id/imgviewhearttabon"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="0.25"
+             android:src="@drawable/heart_tab_on"
+             android:visibility="gone" />
+
+         <ImageView
+             android:id="@+id/imgviewupdotaboff"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="0.25"
+             android:src="@drawable/updo_tab_off" />
+
+         <ImageView
+             android:id="@+id/imgviewupdotabon"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="0.25"
+             android:src="@drawable/updo_tab_on"
+             android:visibility="gone" />
+
+         <ImageView
+             android:id="@+id/imgviewmenoff"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="0.25"
+             android:src="@drawable/men_off" />
+
+         <ImageView
+             android:id="@+id/imgviewmenon"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="0.25"
+             android:src="@drawable/men_on"
+             android:visibility="gone" />
+     </LinearLayout>
+
+     
+     
+     </RelativeLayout>
+     
+    
+     
+    
+     <RelativeLayout 
+        android:id="@+id/rel_appointment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/transprant_bg"
+        android:visibility="gone"
+      
+      >
+     
+         <RelativeLayout 
+      android:id="@+id/rel_navbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navbar"
+        android:layout_alignParentTop="true" >
+        
+        <ImageView 
+            android:id="@+id/imgviewappointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/appointment_text_nav"
+            android:layout_centerInParent="true"/>
+        
+        <ImageView 
+            android:id="@+id/imgviewback1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_centerInParent="true"/>
+        
+    </RelativeLayout>
+    
+    
+      
+      <LinearLayout
+          android:id="@+id/ll_edittext"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+          android:orientation="vertical" >
+
+          <EditText
+              android:id="@+id/edttextmail"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:background="@drawable/edittextbg"
+              android:padding="10dp"
+              android:singleLine="true"
+              android:textColor="#ffffff"
+              android:textSize="20dp"
+              android:textStyle="normal" >
+              <requestFocus />
+          </EditText>
+
+          <EditText
+              android:id="@+id/edttextphonenumber"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/edittextbg"
+              android:padding="10dp"
+              android:singleLine="true"
+              android:textColor="#ffffff"
+              android:textSize="20dp"
+              android:textStyle="normal" />
+
+          <EditText
+              android:id="@+id/edttextdate"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/edittextbg"
+              android:hint="Select Date"
+              android:padding="10dp"
+              android:singleLine="true"
+              android:textColor="#ffffff"
+              android:textSize="20dp"
+              android:textStyle="normal" />
+
+          <EditText
+              android:id="@+id/edttexttime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/edittextbg"
+              android:hint="Select Time"
+              android:padding="10dp"
+              android:singleLine="true"
+              android:textColor="#ffffff"
+              android:textSize="20dp"
+              android:textStyle="normal" />
+          
+          <EditText
+              android:id="@+id/edtmessage"
+              android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:gravity="top"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/edittextbg"
+              android:hint="Message"
+              android:padding="10dp"
+              android:maxLines="5"
+              android:textColor="#ffffff"
+              android:textSize="20dp"
+              android:textStyle="normal" />
+          
+      </LinearLayout>
+
+       <LinearLayout
+          android:id="@+id/ll_editdt"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+          android:layout_below="@+id/ll_edittext"
+          android:gravity="center_horizontal"
+          android:orientation="horizontal" >
+          
+           
+           
+           <ImageView 
+            android:id="@+id/imgviewcancelon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cancelon_btn"
+            android:layout_below="@+id/ll_edittext"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+           
+           <ImageView 
+            android:id="@+id/imgviewcanceloff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cancel"
+            android:layout_below="@+id/ll_edittext"
+            android:layout_centerInParent="true"/>
+           
+           
+           <ImageView 
+            android:id="@+id/imgviewsendoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/send_btn"
+            android:layout_below="@+id/ll_edittext"
+             android:layout_marginLeft="20dp"
+            android:layout_centerInParent="true"/>
+           
+           <ImageView 
+            android:id="@+id/imgviewsendon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sendon"
+            android:layout_below="@+id/ll_edittext"
+           android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:layout_centerInParent="true"/>
+           
+           </LinearLayout>
+         
+         </RelativeLayout>
+     
+      <RelativeLayout 
+        android:id="@+id/rel_saloonpictures"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+     
+         <RelativeLayout 
+      android:id="@+id/rel_navbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navbar"
+        android:layout_alignParentTop="true" >
+        
+        <ImageView 
+            android:id="@+id/imgviewstylez"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo_small"
+            android:layout_centerInParent="true"/>
+        
+        <ImageView 
+            android:id="@+id/imgviewcross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cross_btn"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerInParent="true"/>
+        
+    </RelativeLayout>
+
+    <com.stylez.thirdpartyTool.HorizontalListView
+                android:id="@+id/horizontalListview1"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_below="@+id/rel_navbar"
+			    android:background="@drawable/transprant_bg"
+		
+			    />
+         </RelativeLayout>
+     
+</RelativeLayout>

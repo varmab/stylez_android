@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="30dp"
+    >
+    
+  
+  
+     
+      
+      
+      <LinearLayout 
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:orientation="vertical"
+          android:background="@drawable/popup_bg"
+          android:padding="3dp"
+          >
+          <TextView 
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="Share with your "
+              android:layout_margin="10dp"
+              android:textColor="#333333"
+              android:textStyle="bold"
+              android:textSize="18dp"
+              android:id="@+id/title"
+              />
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_margin="5dp"
+              android:orientation="vertical" >
+              
+              
+              <LinearLayout 
+                  android:layout_height="wrap_content"
+                  android:layout_width="match_parent"
+                  android:background="@drawable/shape_white"
+                  android:orientation="vertical"
+                  >
+                  <LinearLayout
+                  android:id="@+id/mailToStylist"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+				  android:paddingTop="10dp"
+                  android:paddingBottom="10dp"
+                  android:paddingRight="7dp"
+                  android:paddingLeft="7dp"      
+                  android:gravity="center_horizontal"            >
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Stylist"
+                      android:textColor="#070707"
+                      android:textSize="17dp" />
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="0.25dp"
+                  android:background="#dddddd"
+                  android:orientation="horizontal" 
+                  >
+              </LinearLayout>
+
+              <LinearLayout
+                  android:id="@+id/mailToFriends"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingTop="10dp"
+                  android:paddingBottom="10dp"
+                  android:paddingRight="7dp"
+                  android:paddingLeft="7dp" 
+                   android:gravity="center_horizontal" 
+                   >
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Friend/Client"
+                      android:textColor="#070707"
+                      android:textSize="17dp" />
+              </LinearLayout>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="0.25dp"
+                  android:background="#dddddd"
+                  android:orientation="horizontal" 
+                  >
+              </LinearLayout>
+
+              <LinearLayout
+                  android:visibility="gone"
+                  android:id="@+id/record"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingTop="10dp"
+                  android:paddingBottom="10dp"
+                  android:paddingRight="7dp"
+                  android:paddingLeft="7dp" >
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Take Video"
+                      android:textColor="#070707"
+                      android:textSize="17dp" />
+              </LinearLayout>
+                  
+              </LinearLayout>
+              
+
+              
+
+              <!--
+                   <LinearLayout 
+                  android:layout_height="2dp"
+                  android:layout_width="fill_parent"
+                  android:background="#dddddd"
+                  ></LinearLayout>
+              -->
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="0.25dp"
+                  android:background="#d3d3d3"
+                  android:orientation="horizontal" >
+              </LinearLayout>
+
+             
+              
+
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="50dp"
+                  android:layout_marginTop="15dp"
+                  android:id="@+id/cancel"
+                  android:background="@drawable/cancel_popup" />
+          </LinearLayout>
+
+      </LinearLayout>
+      
+      
+             
+         </LinearLayout>
+
